@@ -28,7 +28,16 @@ function Header() {
           </div>
         </div>
       </div>
-      <div></div>
+      <div className="flex items-center space-x-6 bg-amazonBlue-light text-white text-sm p-2">
+        <p className="cursor-pointer flex items-center">
+          <IconMenu2 />
+          All
+        </p>
+        <p className="cursor-pointer hidden sm:inline-flex">Todays Deal&apos;s</p>
+        <p className="cursor-pointer hidden sm:inline-flex">Customer Service</p>
+        <p className="cursor-pointer hidden sm:inline-flex">Registry</p>
+        <p className="cursor-pointer hidden sm:inline-flex">Gift Cards</p>
+      </div>
     </header>
   );
 }
