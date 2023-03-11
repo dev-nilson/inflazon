@@ -1,13 +1,14 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 import { IconSearch, IconShoppingCart, IconMenu2 } from "@tabler/icons-react";
+import logo from "../../assets/logo.png";
 
 function Header() {
   return (
     <header>
       <div className="flex items-center bg-amazonBlue p-2 flex-grow">
         <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
-          <Image className="cursor-pointer" src="" alt="logo" />
+          <Image className="cursor-pointer mr-5" width={80} src={logo} alt="logo" />
         </div>
         <div className="hidden sm:flex items-center h-10 m-[1px] rounded-md flex-grow bg-amazonYellow hover:bg-amazonYellow-dark cursor-pointer">
           <input
@@ -23,7 +24,9 @@ function Header() {
             <p className="font-bold text-sm">Denilson Lemus</p>
           </div>
           <div className="cursor-pointer relative flex items-center">
-            <div className="absolute flex justify-center -right-2 -top-1 bg-amazonYellow-dark rounded-full h-6 w-6 font-semibold text-xs p-1">0</div>
+            <div className="absolute flex justify-center -right-2 -top-1 bg-amazonYellow-dark rounded-full h-6 w-6 font-semibold text-xs p-1">
+              0
+            </div>
             <IconShoppingCart size={35} />
           </div>
         </div>
@@ -33,7 +36,9 @@ function Header() {
           <IconMenu2 />
           All
         </p>
-        <p className="cursor-pointer hidden sm:inline-flex">Todays Deal&apos;s</p>
+        <p className="cursor-pointer hidden sm:inline-flex">
+          Todays Deal&apos;s
+        </p>
         <p className="cursor-pointer hidden sm:inline-flex">Customer Service</p>
         <p className="cursor-pointer hidden sm:inline-flex">Registry</p>
         <p className="cursor-pointer hidden sm:inline-flex">Gift Cards</p>
