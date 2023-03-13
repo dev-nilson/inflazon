@@ -15,6 +15,9 @@ module.exports = {
           dark: "#f3a847",
           DEFAULT: "#febd69",
         },
+        amazonWhite: {
+          DEFAULT: "#e3e6e6",
+        },
       },
     },
   },
