@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header/Header";
 import Banner from "@/components/Banner/Banner";
+import ProductFeed from "@/components/ProductFeed/ProductFeed";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Header />
       <main className="max-w-screen-2xl m-auto">
         <Banner />
+        <ProductFeed />
       </main>
     </>
   );
