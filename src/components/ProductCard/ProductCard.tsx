@@ -1,3 +1,4 @@
+import Currency from "react-currency-formatter";
 import { IconStarFilled, IconStar } from "@tabler/icons-react";
 
 type ProductCardProps = {
@@ -16,12 +17,17 @@ function ProductCard({ product }: ProductCardProps) {
   starRating.fill(<IconStarFilled />, 0, rating);
 
   return (
-    <div>
+    <div className="">
       <img src={product.image} width={200} height={200} alt={product.title} />
       <h4>{product.title}</h4>
-      {starRating.map((icon, index) => (
-        <span key={index}>{icon}</span>
-      ))}
+      <div>
+        {starRating.map((icon, index) => (
+          <span key={index}>{icon}</span>
+        ))}
+      </div>
+      <div>
+          <Currency quantity={product.price} currency="USD" />
+      </div>
     </div>
   );
 }
