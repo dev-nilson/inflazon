@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { IconSearch, IconShoppingCart, IconMenu2 } from "@tabler/icons-react";
-import logo from "../../assets/logo.png";
+import logo from "../../../assets/logo.png";
 
 function Header() {
   return (
