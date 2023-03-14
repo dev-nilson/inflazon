@@ -14,11 +14,11 @@ function ProductCard({ product }: ProductCardProps) {
 
   const rating = Math.floor(Math.random() * 5) + 1;
 
-  const starRating = Array(5).fill(<IconStar />);
-  starRating.fill(<IconStarFilled />, 0, rating);
+  const starRating = Array(5).fill(<IconStar size={18} />);
+  starRating.fill(<IconStarFilled size={18} />, 0, rating);
 
   return (
-    <div className="relative flex flex-col m-5 bg-white z-30 rounded-sm">
+    <div className="relative flex flex-col m-5 bg-white z-30 rounded-sm border-2 border-[#f7f7f7]">
       <Image className="w-full" src={product.image} alt={product.title} />
       <h3 className="text-md px-2 pt-2 pb-1">{product.title}</h3>
       <div className="flex px-2">
@@ -28,10 +28,13 @@ function ProductCard({ product }: ProductCardProps) {
           </span>
         ))}
       </div>
-      <div className="text-2xl p-2 font-semibold">
+      <div className="text-2xl p-3 font-semibold">
         <Currency quantity={product.price} currency="USD" />
+        <small className="text-sm line-through text-gray-500 font-normal mx-2">
+          <Currency quantity={product.price} currency="USD" />
+        </small>
       </div>
-      <button className="mt-auto mb-4 mx-4 button">Add to Cart</button>
+      <button className="mt-10 mb-3 mx-3 button">Add to Cart</button>
     </div>
   );
 }
