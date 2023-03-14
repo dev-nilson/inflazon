@@ -1,6 +1,7 @@
 type Product = {
   id: number;
   title: string;
-  price: number;
+  newPrice: number;
+  oldPrice: number;
   image: any;
-}
+};

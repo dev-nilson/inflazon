@@ -29,9 +29,9 @@ function ProductCard({ product }: ProductCardProps) {
         ))}
       </div>
       <div className="text-2xl p-3 font-semibold">
-        <Currency quantity={product.price} currency="USD" />
+        <Currency quantity={product.newPrice} currency="USD" />
         <small className="text-sm line-through text-gray-500 font-normal mx-2">
-          <Currency quantity={product.price} currency="USD" />
+          <Currency quantity={product.oldPrice} currency="USD" />
         </small>
       </div>
       <button className="mt-10 mb-3 mx-3 button">Add to Cart</button>
