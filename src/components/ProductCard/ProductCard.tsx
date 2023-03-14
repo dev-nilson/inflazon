@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Currency from "react-currency-formatter";
 import { IconStarFilled, IconStar } from "@tabler/icons-react";
 
@@ -17,8 +18,8 @@ function ProductCard({ product }: ProductCardProps) {
   starRating.fill(<IconStarFilled />, 0, rating);
 
   return (
-    <div className="relative flex flex-col m-5 bg-white z-30">
-      <img className="m-auto" src={product.image} width={200} height={200} alt={product.title} />
+    <div className="relative flex flex-col m-5 bg-white z-30 rounded-sm">
+      <Image className="w-full" src={product.image} alt={product.title} />
       <h3 className="text-md px-2 pt-2 pb-1">{product.title}</h3>
       <div className="flex px-2">
         {starRating.map((icon, index) => (
