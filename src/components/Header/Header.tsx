@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { IconSearch, IconShoppingCart, IconMenu2 } from "@tabler/icons-react";
 import logo from "../../../assets/logo.png";
 
@@ -8,7 +9,14 @@ function Header() {
     <header>
       <div className="flex items-center bg-amazonBlue p-2 flex-grow">
         <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
-          <Image className="cursor-pointer mr-5" width={80} src={logo} alt="logo" />
+          <Link href="/">
+            <Image
+              className="cursor-pointer mr-5"
+              width={80}
+              src={logo}
+              alt="logo"
+            />
+          </Link>
         </div>
         <div className="hidden sm:flex items-center h-10 m-[1px] rounded-md flex-grow bg-amazonYellow hover:bg-amazonYellow-dark cursor-pointer">
           <input
@@ -23,12 +31,14 @@ function Header() {
             <p className="text-xs">Made with 💛 by</p>
             <p className="font-bold text-sm">Denilson Lemus</p>
           </div>
-          <div className="cursor-pointer relative flex items-center">
-            <div className="absolute flex justify-center -right-2 -top-1 bg-amazonYellow-dark rounded-full h-6 w-6 font-semibold text-xs p-1">
-              0
+          <Link href="/cart">
+            <div className="relative flex items-center">
+              <div className="absolute flex justify-center -right-2 -top-1 bg-amazonYellow-dark rounded-full h-6 w-6 font-semibold text-xs p-1">
+                0
+              </div>
+              <IconShoppingCart size={35} />
             </div>
-            <IconShoppingCart size={35} />
-          </div>
+          </Link>
         </div>
       </div>
       <div className="flex items-center space-x-6 bg-amazonBlue-light text-white text-sm p-2">
