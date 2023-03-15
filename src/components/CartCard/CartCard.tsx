@@ -15,7 +15,7 @@ function CartCard({ item }: CartCardProps) {
   };
 
   return (
-    <div className="grid grid-cols-5">
+    <div className="grid grid-cols-5 border rounded-sm p-4">
       <Image src={item.image} alt={item.title} />
       <div className="col-span-3 mx-5">
         <p>{item.title}</p>
