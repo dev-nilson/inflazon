@@ -1,10 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useSelector } from "react-redux";
+import { selectItems } from "@/redux/slices/cartSlice";
 import { IconSearch, IconShoppingCart, IconMenu2 } from "@tabler/icons-react";
 import logo from "../../../assets/logo.png";
 
 function Header() {
+  const items = useSelector(selectItems);
+
   return (
     <header>
       <div className="flex items-center bg-amazonBlue p-2 flex-grow">
@@ -33,9 +37,11 @@ function Header() {
           </div>
           <Link href="/cart">
             <div className="relative flex items-center">
-              <div className="absolute flex justify-center -right-2 -top-1 bg-amazonYellow-dark rounded-full h-6 w-6 font-semibold text-xs p-1">
-                0
-              </div>
+              {items.length > 0 && (
+                <div className="absolute flex justify-center -right-2 -top-1 bg-amazonYellow-dark rounded-full h-5 w-5 font-semibold text-sm">
+                  {items.length}
+                </div>
+              )}
               <IconShoppingCart size={35} />
             </div>
           </Link>
