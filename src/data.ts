@@ -22,4 +22,25 @@ export const products = [
     oldPrice: 3,
     image: sneaker,
   },
+  {
+    id: 4,
+    title: "Nike Men's Basketball Shoe",
+    newPrice: 30,
+    oldPrice: 3,
+    image: sneaker,
+  },
+  {
+    id: 5,
+    title: "Nike Men's Basketball Shoe",
+    newPrice: 30,
+    oldPrice: 3,
+    image: sneaker,
+  },
+  {
+    id: 6,
+    title: "Nike Men's Basketball Shoe",
+    newPrice: 30,
+    oldPrice: 3,
+    image: sneaker,
+  },
 ];
