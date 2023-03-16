@@ -18,8 +18,13 @@ function CartCard({ item }: CartCardProps) {
     <div className="grid grid-cols-5 border rounded-sm p-4">
       <Image src={item.image} alt={item.title} />
       <div className="col-span-3 mx-5">
-        <p>{item.title}</p>
-        <Currency quantity={item.newPrice} currency="USD" />
+        <p className="text-lg">{item.title}</p>
+        <div className="text-lg font-semibold text-red-600">
+          <Currency quantity={item.newPrice} currency="USD" />
+          <small className="text-sm line-through text-gray-500 font-normal mx-2">
+            <Currency quantity={item.oldPrice} currency="USD" />
+          </small>
+        </div>{" "}
       </div>
       <div className="flex flex-col justify-self-end justify-center">
         <button className="button" onClick={handleClick}>
