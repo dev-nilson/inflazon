@@ -30,7 +30,10 @@ function Header() {
           <IconSearch className="h-12 w-12 p-3" />
         </div>
         <div className="flex items-center text-white space-x-6 mx-7 whitespace-nowrap">
-          <div className="cursor-pointer">EN</div>
+          <select className="bg-transparent">
+            <option className="text-black">EN</option>
+            <option className="text-black">ES</option>
+          </select>
           <div className="cursor-pointer">
             <p className="text-xs">Made with 💛 by</p>
             <p className="font-bold text-sm">Denilson Lemus</p>
