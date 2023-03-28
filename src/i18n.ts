@@ -14,6 +14,12 @@ i18n
     interpolation: {
       escapeValue: false,
     },
+
+    resources: {
+      en: {
+        translation: {},
+      },
+    },
   });
 
 export default i18n;
