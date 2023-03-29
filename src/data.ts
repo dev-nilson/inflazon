@@ -1,11 +1,19 @@
-import sneaker from "../assets/sneakers.jpg";
+import bigmac from "../assets/bigmac.jpg";
+import coke from "../assets/coke.jpg";
 
 export const products = [
   {
-    id: 1,
-    title: "Nike Men's Basketball Shoe",
+    id: 0,
+    title: "Big Mac",
     newPrice: 10,
     oldPrice: 1,
-    image: sneaker,
+    image: bigmac,
+  },
+  {
+    id: 1,
+    title: "Coke Bottle",
+    newPrice: 10,
+    oldPrice: 1,
+    image: coke,
   }
 ];
