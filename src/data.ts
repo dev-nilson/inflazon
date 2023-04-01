@@ -2,6 +2,7 @@ import bigmac from "../assets/bigmac.jpg";
 import coke from "../assets/coke.jpg";
 import water from "../assets/water.jpg";
 import nike from "../assets/nike.jpg";
+import cheerios from "../assets/cheerios.jpg";
 
 export const products = [
   {
@@ -31,5 +32,12 @@ export const products = [
     newPrice: 10,
     oldPrice: 1,
     image: nike,
+  },
+  {
+    id: 4,
+    title: "Cheerios Box",
+    newPrice: 10,
+    oldPrice: 1,
+    image: cheerios,
   },
 ];
