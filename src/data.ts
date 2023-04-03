@@ -40,4 +40,11 @@ export const products = [
     oldPrice: 1,
     image: cheerios,
   },
+  {
+    id: 5,
+    title: "Milk Galon",
+    newPrice: 10,
+    oldPrice: 1,
+    image: cheerios,
+  },
 ];
