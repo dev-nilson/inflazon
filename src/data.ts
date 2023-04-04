@@ -3,6 +3,7 @@ import coke from "../assets/coke.jpg";
 import water from "../assets/water.jpg";
 import nike from "../assets/nike.jpg";
 import cheerios from "../assets/cheerios.jpg";
+import milk from "../assets/milk.jpg";
 
 export const products = [
   {
@@ -28,7 +29,7 @@ export const products = [
   },
   {
     id: 3,
-    title: "Nike Air Force",
+    title: "Nike Sneakers",
     newPrice: 10,
     oldPrice: 1,
     image: nike,
@@ -45,6 +46,6 @@ export const products = [
     title: "Milk Galon",
     newPrice: 10,
     oldPrice: 1,
-    image: cheerios,
+    image: milk,
   },
 ];
