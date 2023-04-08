@@ -4,6 +4,7 @@ import water from "../assets/water.jpg";
 import nike from "../assets/nike.jpg";
 import cheerios from "../assets/cheerios.jpg";
 import milk from "../assets/milk.jpg";
+import gucci from "../assets/gucci.jpg";
 
 export const products = [
   {
@@ -47,5 +48,12 @@ export const products = [
     newPrice: 10,
     oldPrice: 1,
     image: milk,
+  },
+  {
+    id: 6,
+    title: "Gucci T-shirt",
+    newPrice: 10,
+    oldPrice: 1,
+    image: gucci,
   },
 ];
