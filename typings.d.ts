@@ -5,3 +5,11 @@ type Product = {
   oldPrice: number;
   image: any;
 };
+
+type State = {
+  cart: Cart;
+};
+
+type Cart = {
+  items: Product[];
+};
