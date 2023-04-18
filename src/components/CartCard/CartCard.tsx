@@ -24,7 +24,8 @@ function CartCard({ item }: CartCardProps) {
           <small className="text-sm line-through text-gray-500 font-normal mx-2">
             <Currency quantity={item.oldPrice} currency="USD" />
           </small>
-        </div>{" "}
+        </div>
+        <p className="text-sm font-semibold">Quantity: {item.quantity}</p>
       </div>
       <div className="flex flex-col justify-self-end justify-center">
         <button className="button" onClick={handleClick}>

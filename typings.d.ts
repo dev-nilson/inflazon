@@ -4,6 +4,7 @@ type Product = {
   newPrice: number;
   oldPrice: number;
   image: any;
+  quantity: number;
 };
 
 type State = {

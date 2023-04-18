@@ -13,6 +13,7 @@ export const products = [
     newPrice: 10,
     oldPrice: 5.66,
     image: bigmac,
+    quantity: 1,
   },
   {
     id: 1,
@@ -20,6 +21,7 @@ export const products = [
     newPrice: 10,
     oldPrice: 1.5,
     image: coke,
+    quantity: 1,
   },
   {
     id: 2,
@@ -27,6 +29,7 @@ export const products = [
     newPrice: 10,
     oldPrice: 1.0,
     image: water,
+    quantity: 1,
   },
   {
     id: 3,
@@ -34,6 +37,7 @@ export const products = [
     newPrice: 10,
     oldPrice: 120,
     image: nike,
+    quantity: 1,
   },
   {
     id: 4,
@@ -41,6 +45,7 @@ export const products = [
     newPrice: 10,
     oldPrice: 5.12,
     image: cheerios,
+    quantity: 1,
   },
   {
     id: 5,
@@ -48,6 +53,7 @@ export const products = [
     newPrice: 10,
     oldPrice: 3.40,
     image: milk,
+    quantity: 1,
   },
   {
     id: 6,
@@ -55,5 +61,6 @@ export const products = [
     newPrice: 10,
     oldPrice: 590,
     image: gucci,
+    quantity: 1,
   },
 ];
