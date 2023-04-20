@@ -10,7 +10,7 @@ export const products = [
   {
     id: 0,
     title: "Big Mac",
-    newPrice: 10,
+    newPrice: 12.57,
     oldPrice: 5.66,
     image: bigmac,
     quantity: 1,
@@ -18,7 +18,7 @@ export const products = [
   {
     id: 1,
     title: "Coke Bottle",
-    newPrice: 10,
+    newPrice: 3.33,
     oldPrice: 1.5,
     image: coke,
     quantity: 1,
@@ -26,7 +26,7 @@ export const products = [
   {
     id: 2,
     title: "Water Bottle",
-    newPrice: 10,
+    newPrice: 2.22,
     oldPrice: 1.0,
     image: water,
     quantity: 1,
@@ -34,7 +34,7 @@ export const products = [
   {
     id: 3,
     title: "Nike Sneakers",
-    newPrice: 10,
+    newPrice: 266.55,
     oldPrice: 120,
     image: nike,
     quantity: 1,
@@ -42,7 +42,7 @@ export const products = [
   {
     id: 4,
     title: "Cheerios Box",
-    newPrice: 10,
+    newPrice: 11.37,
     oldPrice: 5.12,
     image: cheerios,
     quantity: 1,
@@ -50,7 +50,7 @@ export const products = [
   {
     id: 5,
     title: "Milk Galon",
-    newPrice: 10,
+    newPrice: 7.55,
     oldPrice: 3.40,
     image: milk,
     quantity: 1,
@@ -58,7 +58,7 @@ export const products = [
   {
     id: 6,
     title: "Gucci T-shirt",
-    newPrice: 10,
+    newPrice: 1310.56,
     oldPrice: 590,
     image: gucci,
     quantity: 1,
