@@ -33,7 +33,6 @@ function CartPage() {
               <button className="button w-full">Place your order</button>
             </div>
             <h2 className="font-semibold text-lg my-2">Order Summary</h2>
-            <span className="text-sm">Items:&nbsp;&nbsp;&nbsp;{items.length}</span>
             <span className="text-sm">
               Total in 2023:&nbsp;&nbsp;&nbsp;
               <Currency quantity={oldTotal} currency="USD" />
